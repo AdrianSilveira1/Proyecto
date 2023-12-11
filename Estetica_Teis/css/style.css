@@ -1,0 +1,362 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/Quicksand.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body{
+  
+}
+
+
+@media (min-width: 1280px){
+#contenedor {
+    width: 1280px;
+} 
+#wrapper {
+      width: 1280px;
+  }
+  .copyright {
+    width:1280px;
+}
+#citas{
+  width: 1280px;
+}
+}
+
+@media (max-width: 375px){
+  .copyright {
+        width: 375px;
+    }
+    .contenedor {
+      width: 375px;
+  }
+  
+  }
+#contenedor {
+     position: relative; 
+     
+     margin: 0 auto; 
+}
+#wrapper {
+  margin: 0 auto; 
+  
+  background-image: url(imagenes/belleza3.jpg);
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  height: 67.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#citas{
+  padding-top: 2vh;
+  margin: 0 auto; 
+  height: 50.625em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lista, .crea_citas {
+ 
+  width: 30.875em;
+  height: 50.625em;
+  background-color: rgba(156, 127, 220, 0.8);
+  border-radius: 20px;
+}
+.crea_citas{
+  text-align: center;
+  font-family: 'Quicksand';
+  color:#fff;
+  padding-top: 7vh;
+  
+}
+.crea_citas > h2{
+  font-weight: bold;
+  padding-top: 2vh;
+  color: #fff;
+}
+
+textarea.form-control {
+  height: auto;
+  margin: auto;
+}
+select.form-control{
+  height: auto;
+  margin: auto;
+}
+.form-control:focus{
+box-shadow: 0 0 0 0.2rem rgb(195, 175, 238);
+}
+.btn-primary{
+  background-color: #7b59c7;
+  border-color: #9b7fdc;
+}
+
+.btn-primary:hover{
+  background-color: #7b59c7;
+  border-color: #9b7fdc;
+}
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgb(123, 89, 199);
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: rgb(123, 89, 199);
+  border-color: rgb(123, 89, 199);
+}
+input.form-control{
+  height: auto;
+  margin: auto;
+}
+
+#inicio{
+  width: 37.5em;
+  height: 43.75em;
+  background-color: rgba(156, 127, 220, 0.8);
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Quicksand';
+  text-align: center;
+  padding: 40px;
+}
+#inicio > h2{
+  font-weight: bold;
+}
+#inicio > p{
+  font-size: 19px;
+}
+.header{
+  width: inherit;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-image: url(imagenes/cabecera-mod.jpg);
+  background-size: 100% 100px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+#site-slogan {
+  color: #fff;
+  margin-top: -16px;
+  font-family: 'Quicksand';
+  font-style: oblique;
+  font-size: 19px;
+  height: 1.5em;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  animation: typing 7s steps(40,end) 0s 1 normal forwards;
+}
+#branding{
+float: right;
+line-height: 100%;
+margin-right: 0;
+margin-top: 20px;
+text-decoration: none;
+}
+
+.logo-site-name >a {
+  color:#fff;
+  font-family: 'Quicksand';
+}
+
+#branding > .logo-site-name > a:hover{
+  
+  text-decoration: none;
+
+  }
+
+#site-slogan{
+  font-style: oblique;
+  font-weight: 800;
+  padding-top:10px;
+  padding-right: 10px;
+color:#fff;
+animation: typing 5s steps(40,end) 0s 1 normal forwards;
+  }
+
+  @keyframes typing {
+    0% {
+        width: 0;
+        display: none
+    }
+
+    30% {
+        width: 0;
+        display: block
+    }
+
+    99% {
+        overflow: hidden
+    }
+
+    100% {
+        width: 100%;
+        overflow: initial
+    }
+}
+nav{
+  border-radius: 10px;
+}
+.nav-item > a{
+  font-family: 'Quicksand';
+  font-size: 18px;
+}
+.dropdown-menu > .dropdown-item{
+  font-family: 'Quicksand';
+}
+
+.text-center{
+  display: block;
+     font-family: 'Quicksand';
+     margin: 0 auto; 
+}
+
+.justified{
+text-align: center;
+font-family: 'Quicksand';
+}
+
+.fab{
+  color: #7b59c7;
+}
+
+.fab:hover{
+  color: #9b7fdc;
+  text-decoration: none;
+}
+
+.mb-5 > a:hover{
+  text-decoration: none;
+}
+
+.font-weight-bold > a{
+  color:#7b59c7;
+  font-family: 'Quicksand';
+}
+.font-weight-bold > a:hover{
+  text-decoration: none;
+  color:#9b7fdc;
+}
+
+.d-flex{
+  align-items: center;
+}
+
+.contenedor{
+    margin: 0 auto; 
+    height:100%;
+    width: 1280px;
+    font-family: 'Quicksand';
+    font-size: 18px;
+    
+}
+
+@media (max-width: 750px){
+  #citas {
+    flex-direction: column;
+    margin: 1VH;
+  }
+  .lista, .crea_citas {
+ 
+    width: 45vh;
+   
+  }
+}
+
+@media (min-width: 374px)and (max-width: 750px){
+    .contenedor {
+      width: 325px;
+      margin: 5px auto;
+      
+  }
+  .contenedor > h3{
+  text-align: center;
+  }
+  #inicio{
+    width:250px;
+    height: 600px;
+    padding: 10px;
+  }
+  #inicio > h2{
+    font-size: 20px;
+  }
+  #inicio > p{
+    font-size: 13px;
+  }
+  #citas {
+    flex-direction: column;
+    margin: 1em 4.5em;
+  }
+  .lista, .crea_citas {
+ 
+    width: 35vh;
+   margin: 1em 0 0;
+  }
+  }
+.contenedor > h1, h5{
+  text-align: center;
+  font-weight:bold;
+  color: #7b59c7;
+}
+@media (min-width: 750px)and (max-width: 1023px){
+  .contenedor {
+    width: 700px;
+    margin: 5px auto;
+    
+}
+
+.lista, .crea_citas {
+ 
+  width: 23.625em;
+ 
+}
+
+}
+.contenedor > h1, h5{
+text-align: center;
+font-weight:bold;
+color: #7b59c7;
+}
+
+.contenedor > h3{
+  
+  font-weight:bold;
+  color: #7b59c7;
+}
+
+@media (min-width: 1024px)and (max-width: 1280px){
+  .crea_citas{
+  padding-top: 3vh;
+}
+}
+
+.contenedor_contacto{
+  margin: 0 auto; 
+  margin-top: 4vh;
+  height:100%;
+  width: 1280px;
+  font-family: 'Quicksand';
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  
+}
+.informacion_contacto > h3{
+  color:#7b59c7;
+}
+.form-control{
+  width: 50%;
+  align-content: center;
+}
