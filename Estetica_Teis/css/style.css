@@ -9,6 +9,45 @@ body{
   
 }
 
+.right{
+  float: right;
+  order: 1;
+}
+.form-control{
+  width: 70%;
+  align-content: center;
+}
+#paginacion{
+  flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+#vista_citas{
+  
+    width: 70.5em;
+    height: 55.75em;
+    background-color: rgba(156, 127, 220, 0.8);
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Quicksand';
+    text-align: center;
+    padding: 40px;
+  
+}
+#login{
+  width: 30.5em;
+  height: 20.75em;
+  background-color: rgba(156, 127, 220, 0.8);
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Quicksand';
+  text-align: center;
+  padding: 40px;
+}
+
+#listado_usuarios > h1{
+  font-weight: bold;
+}
 
 @media (min-width: 1280px){
 #contenedor {
@@ -55,16 +94,44 @@ body{
 #citas{
   padding-top: 2vh;
   margin: 0 auto; 
-  height: 50.625em;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  z-index: 1950;
+  width: 25%;
+  height: 25%;
+     max-width: 777px;
+  margin-left: -30%;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  outline: none;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;
+		  
+}
+.row{
+  margin-bottom: 0.5em;
+}
 .lista, .crea_citas {
  
   width: 30.875em;
-  height: 50.625em;
+  height: 56.625em;
   background-color: rgba(156, 127, 220, 0.8);
   border-radius: 20px;
 }
@@ -273,6 +340,9 @@ font-family: 'Quicksand';
 }
 
 @media (min-width: 374px)and (max-width: 750px){
+  .right{
+    float: left;
+  }
     .contenedor {
       width: 325px;
       margin: 5px auto;
@@ -294,11 +364,16 @@ font-family: 'Quicksand';
   }
   #citas {
     flex-direction: column;
-    margin: 1em 4.5em;
-  }
+    margin: 1.5em;
+    height: 120em;
+}
+.form-control {
+  width: 80%;
+  
+}
   .lista, .crea_citas {
  
-    width: 35vh;
+    width: 20em;
    margin: 1em 0 0;
   }
   }
@@ -313,7 +388,12 @@ font-family: 'Quicksand';
     margin: 5px auto;
     
 }
-
+@media (min-width: 1px)and (max-width: 991px){
+  .right{
+    float:left;
+  }
+    
+}
 .lista, .crea_citas {
  
   width: 23.625em;
@@ -356,7 +436,96 @@ color: #7b59c7;
 .informacion_contacto > h3{
   color:#7b59c7;
 }
-.form-control{
-  width: 50%;
+
+#div-login > .form-group > .form-control{
+  width: 80%;
   align-content: center;
+}
+
+#div-login > .form-group > label{
+ font-size: 1.5em;
+}
+#div-login > .espaciado{
+  padding-bottom: 1em;
+ }
+
+ #listado_clientes{
+  width: 70.5em;
+  height: 50.75em;
+  background-color: rgba(156, 127, 220, 0.8);
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Quicksand';
+  text-align: center;
+  padding: 40px;
+}
+ 
+#listado_usuarios{
+  width: 70.5em;
+  height: 55.75em;
+  background-color: rgba(156, 127, 220, 0.8);
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Quicksand';
+  text-align: center;
+  padding: 40px;
+}
+
+.col-md-6{
+  margin-bottom: 1em;
+}
+
+#crea_usuarios >h1{
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+#crea_usuarios{
+  width: 70.5em;
+  height: 30.75em;
+  background-color: rgba(156, 127, 220, 0.8);
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Quicksand';
+  text-align: center;
+  padding: 40px;
+}
+
+#modifica_usuarios{
+  width: 70.5em;
+  height: 45.75em;
+  background-color: rgba(156, 127, 220, 0.8);
+  border-radius: 20px;
+  color: #fff;
+  font-family: 'Quicksand';
+  text-align: center;
+  padding: 40px;
+}
+
+#modifica_usuarios > form >.form-group > .form-control{
+  margin-bottom: 1.5em;
+}
+
+.num{
+  width:15%;
+}
+.page-item{
+  color: #7b59c7;
+}
+.list-group-flush , .list-group-item{
+  background-color: rgba(156, 127, 220, 0.1);
+}
+#appointments{
+  flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1em;
+}
+.lista{
+  color: #fff;
+  font-family: 'Quicksand';
+}
+.lista > h1{
+margin-top: 1em;
+margin-bottom: 0.5em;
+  text-align: center;
+  font-weight: bold;
 }

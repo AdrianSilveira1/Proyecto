@@ -9,7 +9,8 @@
   <title>Estetica Teis</title>
 </head>
 <body>
-  <?php require_once("./Estructura/header.php");?>
+  <?php require_once("./Estructura/header.php");
+  require_once("./Estructura/modal.php");?>
   <div class="contenedor_contacto">
     <div class="informacion_contacto">
         <h3>Dirección</h3>

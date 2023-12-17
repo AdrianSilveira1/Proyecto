@@ -41,4 +41,8 @@ class Connection
     {
         return $this->con;
     }
+    
+    public function close(){
+        die();
+    }
 }
